@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar-track-piece {
+    @apply bg-transparent rounded-none;
+  }
+  ::-webkit-scrollbar {
+    @apply w-2 h-2 bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply h-12 bg-light-300 rounded-full;
+    @apply cursor-pointer;
+    outline: 2px solid #fff;
+    border: 2px solid #fff;
+    outline-offset: -2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-light-400;
+  }
+
+  a {
+    @apply text-link-500 dark:text-link-500;
+
+    &:hover {
+      @apply cursor-pointer;
+      @apply hover:brightness-150;
+    }
+  }
+}
