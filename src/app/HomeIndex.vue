@@ -13,7 +13,7 @@ import WebIcon from '@/icons/WebIcon.vue';
       bg-gradient-to-l z-0 overflow-hidden
     "
   >
-    <HomeIndexChat></HomeIndexChat>
+    <!-- <HomeIndexChat></HomeIndexChat> -->
 
     <div
       class="-z-10 h-[120vh] w-[100vw] fixed right-1/4 top-0 bg-[#eaeef4] translate-x-full"

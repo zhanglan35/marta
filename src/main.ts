@@ -1,4 +1,5 @@
 import "./assets/index.postcss";
+import "./assets/chat-bot.postcss";
 
 import { createApp } from "vue";
 import App from "./App.vue";

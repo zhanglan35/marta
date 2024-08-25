@@ -11,6 +11,36 @@
 <body>
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
+
+  <script type="text/javascript" src="chatbot.min.js"></script>
+  <link rel="stylesheet" href="https://sandbox.caiplatform.com/frontend-web-chat/dist/css/caipDefaultChatbot.css" />
+  <link rel="stylesheet" href="https://sandbox.caiplatform.com/frontend-web-chat/dist/css/page.min.css" />
+  <script type="text/javascript">
+    console.log('10000');
+    var themefromURL = "fsChatbotPageLoad.css";
+    window.onload = function () {
+      window.chatSettings = {
+        endpoint:
+          "https://sandbox.caiplatform.com/webAdapterSocket",
+        path: "/backend-channel-adaptor-web/socket.io",
+        assetsBasePath:
+          "https://sandbox.caiplatform.com/frontend-web-chat/",
+        channelAdaptorPath: "http://backend-channel-adaptor-web:11006",
+        masterBotID: "21869adb-748a-4e5b-b0b7-2497ce5ca43b",
+        voiceEnabled: true,
+        chatbotName: "Chatbot",
+        storageType: "sessionStorage",
+        theme: "fsChatbotPageLoad.css",
+        checkValidateLogin: true
+      };
+      chatController.initChatWindow();
+
+      document.getElementById('header-label').innerHTML = "MARS Virtual Assitant";
+      // Hide chat-sidebar-btn
+      document.getElementById('open-converse').style.background = "#FFF url(caip-chat-icon.png) center no-repeat";
+
+    };
+  </script>
 </body>
 
 </html>
