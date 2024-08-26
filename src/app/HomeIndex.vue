@@ -120,7 +120,7 @@ import WebIcon from '@/icons/WebIcon.vue';
         "
       >
         <div
-          v-for="text in ['Report An Incident', 'Raise a Request', 'Share Knowledge', 'Reset Password']"
+          v-for="text in ['Report an Incident', 'Raise a Request', 'Share Knowledge', 'Reset Password']"
           class="flex-auto bg-white py-3 mb-4 rounded-full shadow-lg cursor-pointer hover:brightness-95"
         >
           {{ text }}
