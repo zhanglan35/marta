@@ -30,7 +30,7 @@ import WebIcon from '@/icons/WebIcon.vue';
       class="
         flex justify-end items-center bg-white
         h-12 space-x-10 py-2 px-8 border-b
-        font-sans text-base text-black
+        font-[mars] text-base text-black
       "
     >
       <a class="text-light-600">My Tickets</a>
@@ -53,38 +53,38 @@ import WebIcon from '@/icons/WebIcon.vue';
       class="
         flex start items-center
         h-20 space-x-10 py-3 px-8
-        font-sans text-link-800 text-lg
+        font-[mars] text-primary-500 text-lg
       "
     >
-      <div class="text-4xl font-extrabold mr-12">
+      <div class="text-4xl mr-12 font-[mars-bold]">
         MARTA
       </div>
 
-      <a class="text-link-800">IT FAQ</a>
-      <a class="text-link-800">IT Knowledge Base</a>
-      <a class="text-link-800">IT Workflows</a>
-      <a class="text-link-800">IT Experts</a>
-      <a class="text-link-800">24 / 7 Supports</a>
+      <a class="text-primary-500">IT FAQ</a>
+      <a class="text-primary-500">IT Knowledge Base</a>
+      <a class="text-primary-500">IT Workflows</a>
+      <a class="text-primary-500">IT Experts</a>
+      <a class="text-primary-500">24 / 7 Supports</a>
 
       <div>
         <img class="w-5 h-5" src="@/assets/icons/search.png" alt="search">
       </div>
     </header>
 
-    <main class="flex-auto flex flex-col items-start justify-center pl-8">
+    <main class="flex-auto flex flex-col items-start justify-center pl-8 font-[mars-bold]">
       <div class="text-3xl font-bold self-start place-self-start">
         Easy is better!
       </div>
       <div class="h-8"></div>
-      <div class="text-5xl font-extrabold font-sans">
+      <div class="text-6xl font-extrabold">
         Streamline Your <br /> IT Service & Knowledge <br /> Management
       </div>
       <div class="h-8"></div>
-      <div class="text-xl">Create efficient and enjoyable work experience</div>
+      <div class="text-xl font-[mars]">Create efficient and enjoyable work experience</div>
 
       <div class="h-8"></div>
 
-      <div class="relative">
+      <div class="relative font-[mars]">
         <input
           class="
             text-base  bg-white
@@ -113,15 +113,15 @@ import WebIcon from '@/icons/WebIcon.vue';
         class="
           w-full h-24
           flex items-center
-          space-x-12 px-12
-          font-bold pb-12
+          space-x-12 px-8
+          font-[mars-bold] pb-12
           text-xl text-center
-          z-50 text-link-800
+          z-50 text-primary-500
         "
       >
         <div
           v-for="text in ['Report An Incident', 'Raise a Request', 'Share Knowledge', 'Reset Password']"
-          class="flex-auto bg-white py-2 mb-4 rounded-full shadow-lg cursor-pointer hover:brightness-95"
+          class="flex-auto bg-white py-3 mb-4 rounded-full shadow-lg cursor-pointer hover:brightness-95"
         >
           {{ text }}
         </div>
@@ -130,7 +130,7 @@ import WebIcon from '@/icons/WebIcon.vue';
         class="
           flex justify-center items-center
           text-sm h-12 border-t bg-white
-          w-full flex-auto
+          w-full flex-auto font-[mars]
         "
       >
         @ 2024 Mars, Incorporated and its Affiliates. All Rights Reserved

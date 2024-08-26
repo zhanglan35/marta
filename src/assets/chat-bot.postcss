@@ -14,22 +14,64 @@
   
     #chat-messages {
       padding: 16px 0px 16px !important;
-      height: 424px;
+      height: 432px;
   
       @apply w-full;
       @apply bg-transparent;
   
       .message-wrapper.bot {
         @apply w-full;
-  
+
         .message {
+          @apply w-fit max-w-[calc(100%-64px-64px)];
+        }
+
+        .form-container {
+          @apply max-w-[calc(100%-64px-64px)];
+        }
+  
+        .message,
+        .form-container {
           @apply ml-16 rounded;
           @apply bg-white text-light-600 text-[15px];
-          @apply w-fit max-w-[calc(100%-64px-20px)];
           @apply px-3 py-2;
+          @apply border-none;
   
           .bot-timeStamp {
             @apply text-light-400;
+          }
+
+          .field-label {
+            @apply text-light-600;
+          }
+
+          .field-input {
+            @apply border-none bg-light-50;
+          }
+
+          .dropdown-input {
+            @apply border-none bg-light-50;
+            @apply text-primary-500 py-2;
+            
+            .dropdown-values-container {
+              @apply border border-light-300 ml-0.5 mt-1 rounded h-[100px];
+            }
+          }
+
+          .convButton {
+            @apply bg-link-500 mt-1 py-1.5 text-base;
+          }
+
+          .form-buttons-container {
+            @apply pr-4;
+
+            .form-button {
+              @apply text-primary-500;
+
+              &.active {
+                @apply border-link-500;
+              }
+            }
           }
         }
   
@@ -51,10 +93,19 @@
           @apply mt-0;
         }
   
-        .message:first-child:after {
+        *:first-child:after {
           background-image: url('/caip-chat-icon.png');
     
           @apply border border-link-200;
+          @apply w-10 h-10 bg-white rounded-full;
+          @apply absolute -left-[52px] translate-y-14;
+        }
+
+        .form-container:after {
+          content: '';
+          background-size: cover;
+
+          @apply -top-14;
           @apply w-10 h-10 bg-white rounded-full;
           @apply absolute -left-[52px] translate-y-14;
         }
@@ -90,7 +141,7 @@
     }
   
     .chat-header {
-      @apply bg-primary-600 flex;
+      @apply bg-primary-500 flex;
       @apply shadow-none border-b;
       @apply py-0 flex items-center;
       @apply border-b-0;
