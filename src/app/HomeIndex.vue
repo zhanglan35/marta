@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import HomeIndexChat from './HomeIndexChat.vue';
 import SearchIcon from '@/icons/SearchIcon.vue';
 import WebIcon from '@/icons/WebIcon.vue';
+import { onMounted, onUnmounted } from 'vue';
+import { chatWindow } from './chat';
+
+onMounted(() => chatWindow.init());
+onUnmounted(() => chatWindow.destroy());
 </script>
 
 <template>
@@ -40,9 +44,12 @@ import WebIcon from '@/icons/WebIcon.vue';
       <div>
         <WebIcon class="w-6 h-6"></WebIcon>
       </div>
-      <div class="flex items-center text-base space-x-2">
+      <div
+        class="flex items-center text-base space-x-2 rounded py-1 px-2 cursor-pointer hover:backdrop-brightness-95"
+        @click="$router.push('/panel')"
+      >
         <img
-          class="rounded-full bg-transparent w-9 h-9"
+          class="rounded-full bg-transparent w-9 h-9 "
           src="@/assets/avatar.jpeg" alt="avatar"
         >
         <span>Anne Lee</span>
@@ -137,4 +144,5 @@ import WebIcon from '@/icons/WebIcon.vue';
       </div>
     </footer>
   </div>
+
 </template>
