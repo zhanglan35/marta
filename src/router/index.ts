@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeIndex from "../app/HomeIndex.vue";
-import PanelIndex from "../app/PanelIndex.vue";
+import PanelIndex from "../app/Panel.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
