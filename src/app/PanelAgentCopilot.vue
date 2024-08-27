@@ -28,7 +28,7 @@ function handleSubmit(option: string) {
 </script>
 
 <template>
-  <section class="flex flex-col h-full space-y-2 py-2 w-[400px] mr-2 shrink-0">
+  <section class="flex-1 flex flex-col h-full space-y-2 py-2 mr-2">
     <div class="flex-auto bg-white rounded w-full flex flex-col overflow-auto">
 
       <header class="h-10 border-b flex items-center px-2 shrink-0">

@@ -77,20 +77,20 @@ function handleSend() {
 </script>
 
 <template>
-  <section class="flex-auto flex flex-col h-full space-y-2 py-2 shrink-1 overflow-auto">
+  <section class=" flex-1 flex flex-col h-full space-y-2 py-2 overflow-auto">
     <div class="flex-auto bg-white rounded w-full flex flex-col overflow-auto">
-      <header class="h-10 border-b flex items-center px-2">
-      <span class="text-lg">Live Agent</span>
-      <span class="flex-auto"></span>
-      <TimeIcon class="w-5 h-5"></TimeIcon>
-      <span class="text-sm ml-2">
-        00:04:00
-      </span>
+      <header class="h-10 border-b flex items-center px-2 shrink-0">
+        <span class="text-lg">Live Agent</span>
+        <span class="flex-auto"></span>
+        <TimeIcon class="w-5 h-5"></TimeIcon>
+        <span class="text-sm ml-2">
+          00:04:00
+        </span>
 
-      <span class="flex items-center space-x-2 ml-2 rounded bg-primary-600 text-white px-2 py-0.5 cursor-pointer hover:bg-primary-700">
-          <GlobalIcon></GlobalIcon>
-          <span>English</span>
-      </span>
+        <span class="flex items-center space-x-2 ml-2 rounded bg-primary-600 text-white px-2 py-0.5 cursor-pointer hover:bg-primary-700">
+            <GlobalIcon></GlobalIcon>
+            <span>English</span>
+        </span>
       </header>
 
       <section class="flex-auto py-2 overflow-auto p-3 space-y-2 shrink-1 flex flex-col" ref="container">

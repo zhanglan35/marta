@@ -53,8 +53,8 @@ onUnmounted(() => {
             text-[11px] py-2 space-y-1
             select-none cursor-pointer
             flex flex-col items-center
-            hover:backdrop-brightness-95
-            ${index === 0 ? 'text-primary-500 fill-primary-500' : 'text-light-600 fill-light-600' }
+            hover:bg-primary-50
+            ${index === 0 ? 'text-primary-500 fill-primary-500 bg-primary-50' : 'text-light-600 fill-light-600' }
           `"
         >
           <div>
@@ -161,7 +161,7 @@ onUnmounted(() => {
                 { name: 'Anne Lee', date: '2024-06-20', content: 'When logging in SAP EEP, EPP, EAP, the page would pop up balancing error 88', },
                 { name: 'Dave Lu', date: '2024-06-20', content: 'Cannot receive email in my outlook.', }
               ]"
-              class="px-2 py-2 bg-white rounded border flex flex-col relative hover:bg-light-50 cursor-pointer"
+              class="px-2 py-2 bg-white rounded border flex flex-col relative cursor-pointer hover:bg-primary-50"
             >
               <div class="absolute right-0 top-0 pl-3 pr-1 h-4 bg-link-50 text-link-500 rounded-bl-full text-xs">
                 Closed

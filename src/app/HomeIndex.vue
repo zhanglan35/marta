@@ -87,7 +87,7 @@ onUnmounted(() => chatWindow.destroy());
         Streamline Your <br /> IT Service & Knowledge <br /> Management
       </div>
       <div class="h-8"></div>
-      <div class="text-xl font-[mars]">Create efficient and enjoyable work experience</div>
+      <div class="text-xl font-[mars]">Create efficient and enjoyable working experience</div>
 
       <div class="h-8"></div>
 
