@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import SearchIcon from '@/icons/SearchIcon.vue';
 import WebIcon from '@/icons/WebIcon.vue';
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 import { chatWindow } from './chat';
 
-onMounted(() => chatWindow.init());
+const canvasRef = ref<HTMLCanvasElement>();
+
+onMounted(() => {
+  chatWindow.init();
+});
 onUnmounted(() => chatWindow.destroy());
 </script>
 
@@ -72,16 +76,15 @@ onUnmounted(() => chatWindow.destroy());
       <a class="text-primary-500">IT Workflows</a>
       <a class="text-primary-500">IT Experts</a>
       <a class="text-primary-500">24 / 7 Supports</a>
-
-      <div>
-        <img class="w-5 h-5" src="@/assets/icons/search.png" alt="search">
-      </div>
     </header>
 
     <main class="flex-auto flex flex-col items-start justify-center pl-8 font-[mars-bold]">
-      <div class="text-3xl font-bold self-start place-self-start">
-        Easy is better!
-      </div>
+      <div class="relative">
+        <div class="text-4xl text-center text-primary-600 font-bold self-start place-self-start">
+          Easier Is Better
+        </div>
+      <canvas ref="canvasRef" class="-translate-y-[85%] absolute top-0 left-0" width="300" height="150"></canvas>
+    </div>
       <div class="h-8"></div>
       <div class="text-6xl font-extrabold">
         Streamline Your <br /> IT Service & Knowledge <br /> Management
