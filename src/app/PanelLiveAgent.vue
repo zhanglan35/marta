@@ -7,8 +7,7 @@ const messages = ref([
   {
     role: 'admin',
     content: `
-      You are now waiting in the queue. We will transfer you to the first available agent, if you don\'t want to wait any longer,
-      you can also type "create a ticket" to open a ticket directly or type "live agent" to ask me another question.
+      You are now waiting in the queue. We will transfer you to the first available agent.
     `
   },
   {
@@ -36,11 +35,6 @@ const answers = [
   `
     Okay. Uh, Carla, may I have the ticket number please?
   `,
-  `
-    Pending wordings put here. Pending wordings put here.
-    Pending wordings put here. Pending wordings put here.
-    Pending wordings put here.
-  `
 ];
 
 const isLoading = ref(false);
