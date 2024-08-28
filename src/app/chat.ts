@@ -22,7 +22,7 @@ export const chatWindow = {
         chatbotName: "Chatbot",
         storageType: "sessionStorage",
         theme: "fsChatbotPageLoad.css",
-        checkValidateLogin: true,
+        checkValidateLogin: false,
       };
       chatController.initChatWindow();
     
