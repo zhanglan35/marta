@@ -37,7 +37,7 @@ onUnmounted(() => {
         class="text-3xl font-[mars-bold] cursor-pointer"
         @click="$router.push('/')"
       >
-        MARTA
+        Service Home
       </div>
 
       <div class="text-xl ml-4 pt-1">
@@ -175,7 +175,7 @@ onUnmounted(() => {
               <div class="flex mt-2 text-light-400 text-xs">
                 <span>{{ card.date }}</span>
                 <span class="flex-auto"></span>
-                <span>MARS Service Desk</span>
+                <span>Service Desk</span>
               </div>
 
               <div class="text-xs mt-2">

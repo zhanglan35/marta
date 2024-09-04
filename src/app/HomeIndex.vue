@@ -68,7 +68,7 @@ onUnmounted(() => chatWindow.destroy());
       "
     >
       <div class="text-4xl mr-12 font-[mars-bold]">
-        MARTA
+        Service Home
       </div>
 
       <a class="text-primary-500">IT FAQ</a>

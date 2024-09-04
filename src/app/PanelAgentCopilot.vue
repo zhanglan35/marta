@@ -42,7 +42,7 @@ function handleSubmit(option: string) {
           <div class="font-bold">Summarization</div>
           <div class="h-1"></div>
           <div class="text-sm text-wrap w-full">
-            Welcome to MARTA Agent Copilot. Please find the summarization of
+            Welcome to Service Agent Copilot. Please find the summarization of
             the recent conversation between Anne Lee and virtual agent.
           </div>
           <div class="bg-white rounded p-2 mt-2">

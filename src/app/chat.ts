@@ -26,7 +26,7 @@ export const chatWindow = {
       };
       chatController.initChatWindow();
     
-      document!.getElementById('header-label')!.innerHTML = "MARS Virtual Assistant";
+      document!.getElementById('header-label')!.innerHTML = "Virtual Assistant";
       // Hide chat-sidebar-btn
       document!.getElementById('open-converse')!.style.background = "#FFF url(caip-chat-icon.png) center no-repeat";
     };
