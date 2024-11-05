@@ -143,7 +143,7 @@ onUnmounted(() => chatWindow.destroy());
           w-full flex-auto font-[mars]
         "
       >
-        @ 2024 Mars, Incorporated and its Affiliates. All Rights Reserved
+        © 2024 Accenture. All Rights Reserved.
       </div>
     </footer>
   </div>
